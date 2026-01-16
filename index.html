@@ -17,19 +17,21 @@
   </head>
   <body>
     <nav
-      class="max-w-7xl lg:mx-auto py-15 lg:flex items-center justify-between"
+      class="max-w-7xl mx-auto lg:py-15 py-8 lg:flex md:flex sm:hidden hidden items-center lg:justify-between md:justify-between"
     >
-      <div class="flex gap-4 items-center">
+      <div class="flex gap-2 items-center mx-1">
         <img src="./images/business.png" alt="Company_logo" />
-        <h2 class="font-bold font-heading text-[35px] text-[#414040]">
+        <h2
+          class="font-bold font-heading lg:text-[35px] md:text-[24px] text-[#414040]"
+        >
           Justice
         </h2>
       </div>
-      <ul class="text-[#707070] font-paragraph flex gap-7.5 gap-3.5">
+      <ul class="text-[#707070] font-paragraph flex lg:gap-7.5 gap-3.5">
         <li><a href="">Home</a></li>
         <li>
           <a href="">Service</a>
-          <i class="fa-solid fa-greater-than"></i>
+          <i class="fa-solid fa-greater-than hidden"></i>
         </li>
         <li class="">
           <a href="">Cases</a>
@@ -45,30 +47,69 @@
         </li>
       </ul>
       <button
-        class="text-white bg-button font-heading text-[18px] font-semibold py-5 px-7 rounded-lg cursor-pointer"
+        class="text-white bg-button font-heading text-[18px] font-semibold lg:py-5 lg:px-7 md:py-5 md:px-7 rounded-lg cursor-pointer"
       >
         Free Consultation
       </button>
     </nav>
+    <!-- Nav for mobile device -->
+    <nav>
+      <div class="sm:flex flex lg:hidden md:hidden justify-between mx-2 py-4">
+        <div class="flex gap-2 items-center mx-1">
+          <img src="./images/business.png" alt="Company_logo" />
+          <h2 class="font-bold font-heading text-[24px] text-[#414040]">
+            Justice
+          </h2>
+        </div>
+        <button
+          class="text-white bg-button font-heading text-[18px] font-semibold rounded-lg cursor-pointer py-2 px-3"
+        >
+          Free Consultation
+        </button>
+      </div>
+      <ul
+        class="text-[#707070] font-paragraph lg:hidden md:hidden flex justify-center gap-2 mb-2.5"
+      >
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="">Service</a>
+          <i class="fa-solid fa-greater-than hidden"></i>
+        </li>
+        <li class="">
+          <a href="">Cases</a>
+          <i class="fa-solid fa-greater-than"></i>
+        </li>
+        <li>
+          <a href="">Blog</a>
+          <i class="fa-solid fa-greater-than"></i>
+        </li>
+        <li>
+          <a href="">Contact Us</a>
+          <i class="fa-solid fa-greater-than"></i>
+        </li>
+      </ul>
+    </nav>
     <!-- Banner section start -->
     <section>
       <div
-        class="max-w-7xl mx-auto bg-[url('images/banner.png')] bg-cover bg-center"
+        class="lg:max-w-7xl mx-auto bg-[url('images/banner.png')] bg-cover bg-center"
       >
-        <div class="py-26 max-w-2xl mx-auto text-center">
-          <h2 class="font-extrabold text-white font-heading text-7xl mb-6">
+        <div class="lg:py-26 py-15 max-w-2xl mx-auto text-center">
+          <h2
+            class="font-extrabold text-white font-heading lg:text-7xl md:text-5xl text-4xl mb-6"
+          >
             We Provide Effective Legal Solutions
           </h2>
-          <p class="text-[#E7E7E7] font-paragraph mb-8">
+          <p class="text-[#E7E7E7] font-paragraph mb-8 p-1">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour.
           </p>
-          <div class="flex gap-6">
+          <div class="flex gap-6 p-2">
             <input
               type="text"
               placeholder="Search your services"
-              class="w-2/3 bg-white text-para p-5 rounded-lg text-start border-0"
+              class="w-2/3 bg-white p-5 rounded-lg text-start border-0"
             />
             <button
               class="w-1/3 p-5 text-white bg-button font-heading rounded-lg text-[20px] font-semibold cursor-pointer"
@@ -81,7 +122,7 @@
     </section>
     <!-- Banner section end -->
     <!-- Practice section start -->
-    <section class="lg:py-30 mx-auto">
+    <section class="lg:py-30 py-15 mx-auto">
       <div class="text-center lg:max-w-[714px] md:max-w-full mx-auto">
         <h2
           class="mx-auto font-heading font-extrabold text-[40px] mb-6 text-[#414040]"
@@ -96,7 +137,7 @@
       </div>
       <div class="max-w-7xl mx-auto mt-16 grid lg:grid-cols-3 md:grid-cols-2">
         <div
-          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] pt-14 pb-17.5 transition duration-900"
+          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] lg:pt-14 lg:pb-17.5 transition duration-900"
         >
           <img src="./images/business.png" alt="" />
           <h2 class="font-heading font-extrabold text-[32px]">Business Law</h2>
@@ -112,7 +153,7 @@
           </div>
         </div>
         <div
-          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] pt-14 pb-17.5 transition duration-900"
+          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] lg:pt-14 lg:pb-17.5 pt-8 pb-8 transition duration-900"
         >
           <img src="./images/child.png" alt="" />
           <h2 class="font-heading font-extrabold text-[32px]">Child Support</h2>
@@ -128,7 +169,7 @@
           </div>
         </div>
         <div
-          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] pt-14 pb-17.5 transition duration-900"
+          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] lg:pt-14 lg:pb-17.5 pt-8 pb-8 transition duration-900"
         >
           <img src="./images/criminal.png" alt="" />
           <h2 class="font-heading font-extrabold text-[32px]">Criminal Law</h2>
@@ -144,7 +185,7 @@
           </div>
         </div>
         <div
-          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] pt-14 pb-17.5 transition duration-900"
+          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] lg:pt-14 lg:pb-17.5 pt-8 pb-8 transition duration-900"
         >
           <img src="./images/education.png" alt="" />
           <h2 class="font-heading font-extrabold text-[32px]">Education Law</h2>
@@ -160,7 +201,7 @@
           </div>
         </div>
         <div
-          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] pt-14 pb-17.5 transition duration-900"
+          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] lg:pt-14 lg:pb-17.5 pt-8 pb-8 transition duration-900"
         >
           <img src="./images/divorce.png" alt="" />
           <h2 class="font-heading font-extrabold text-[32px]">Divorce Law</h2>
@@ -176,7 +217,7 @@
           </div>
         </div>
         <div
-          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] pt-14 pb-17.5 transition duration-900"
+          class="lg:w-[401px] flex flex-col gap-6 items-center cursor-pointer hover:bg-[#e7e7e7] lg:pt-14 lg:pb-17.5 pt-8 pb-8 transition duration-900"
         >
           <img src="./images/tax.png" alt="" />
           <h2 class="font-heading font-extrabold text-[32px]">Tax Law</h2>
@@ -195,7 +236,7 @@
     </section>
     <!-- Practice section end -->
     <!-- Client section start -->
-    <section class="pb-30">
+    <section class="lg:pb-30 pb-20">
       <div class="max-w-7xl mx-auto">
         <div class="text-center max-w-[714px] mx-auto">
           <h2

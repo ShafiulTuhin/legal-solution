@@ -16,3 +16,6 @@
 .bg-button {
   background-color: #b68c5a;
 }
+.hide {
+  display: none;
+}
