@@ -16,6 +16,11 @@
 .bg-button {
   background-color: #b68c5a;
 }
+.bg-button:hover {
+  background-color: transparent;
+  color: #b68c5a;
+  border: 1px solid #b68c5a;
+}
 .hide {
   display: none;
 }
